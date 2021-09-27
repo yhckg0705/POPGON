@@ -1,14 +1,14 @@
 // References to DOM elements
-const popcat = document.querySelector("#popcat");
+const popgon = document.querySelector("#popgon");
 const btn = document.querySelector("#btn");
 
-// The two images of the POP CAT
-const openMouthImg = "./images/open.png";
-const closeMouthImg = "./images/close.png";
+// The two images of the POP GON
+const openMouthImg = "open.png";
+const closeMouthImg = "close.png";
 
 // The two Popping sounds
-const openMouthSound = new Audio("./sound/sound-open.mp3");
-const closeMouthSound = new Audio("./sound/sound-close.mp3");
+const openMouthSound = new Audio("sound-open.mp3");
+const closeMouthSound = new Audio("sound-close.mp3");
 
 // Event Handlers (Desktops)
 btn.addEventListener("mousedown", openMouth);
@@ -27,11 +27,11 @@ btn.addEventListener("touchend", function(e) {
 
 // The functions which will perform the cool stuff
 function openMouth() {
-    popcat.src = openMouthImg;
+    popgon.src = openMouthImg;
     openMouthSound.play();
 }
 
 function closeMouth() {
-    popcat.src = closeMouthImg;
+    popgon.src = closeMouthImg;
     closeMouthSound.play();
 }
